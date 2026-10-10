@@ -1,0 +1,15 @@
+[project]
+name = "pygit"
+version = "0.1.0"
+description = "A minimal, from-scratch reimplementation of Git's core object model and commands."
+requires-python = ">=3.9"
+
+[project.scripts]
+pygit = "pygit.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pygit*"]
